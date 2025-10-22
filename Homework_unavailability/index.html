@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<title>NeonWave // 2026</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Russo+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a href="#content" class="skip">перейти к содержимому</a>
+
+		<div class="nv-topbar">
+			<div class="nv-logo"><img src="images/logo-neon.png" /></div>
+			<div class="nv-nav">
+				<span data-page="home">Главная</span>
+				<span data-page="lineup">Состав</span>
+				<span data-page="tickets">Билеты</span>
+			</div>
+		</div>
+
+		<div id="app">
+			<div class="pane" id="pane">
+				<div class="section s1" style="--i: 0" data-index="0">
+					<div class="hero-overlay"></div>
+					<div class="hero-center">
+						<div class="hero-title"><img src="images/title-hero.png" /></div>
+						<div class="hero-sub">ПРИЧАЛ ЧЁРНОГО МОРЯ · 18—20 ИЮЛЯ</div>
+						<div class="cta enter">Войти в волну</div>
+					</div>
+					<div class="hero-flares"><i></i><i></i><i></i></div>
+				</div>
+
+				<div class="section s2" style="--i: 1" data-index="1">
+					<div class="wrap">
+						<div class="title">ХЕДЛАЙНЕРЫ</div>
+						<div class="row-scroll" id="headliners">
+							<div class="hl">
+								<img src="images/h1.jpg" />
+								<div class="t">VIOLET VELOCITY</div>
+							</div>
+							<div class="hl">
+								<img src="images/h2.jpg" />
+								<div class="t">POLAR SHIFT</div>
+							</div>
+							<div class="hl">
+								<img src="images/h3.jpg" />
+								<div class="t">MARINA & THE LUMENS</div>
+							</div>
+							<div class="hl">
+								<img src="images/h4.jpg" />
+								<div class="t">EQUINOX</div>
+							</div>
+							<div class="hl">
+								<img src="images/h5.jpg" />
+								<div class="t">NYX</div>
+							</div>
+							<div class="hl">
+								<img src="images/h6.jpg" />
+								<div class="t">AURORA DRIVE</div>
+							</div>
+							<div class="hl">
+								<img src="images/h7.jpg" />
+								<div class="t">QUASAR</div>
+							</div>
+							<div class="hl">
+								<img src="images/h8.jpg" />
+								<div class="t">BLUENOISE</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s3" style="--i: 2" data-index="2">
+					<div class="wrap exp">
+						<div class="title">ЧТО ВАС ЖДЁТ</div>
+						<div class="cards">
+							<div class="c">
+								<img src="images/x1.jpg" />
+								<div class="h">МОРСКАЯ СЦЕНА</div>
+								<div class="p">
+									Танцы над водой на плавучем понтоне в лучах лазеров цвета
+									циан.
+								</div>
+							</div>
+							<div class="c">
+								<img src="images/x2.jpg" />
+								<div class="h">НОЧНОЙ МАРКЕТ</div>
+								<div class="p">
+									Неоновый фуд-аллея с фьюжн-закусками и светящимися напитками.
+								</div>
+							</div>
+							<div class="c">
+								<img src="images/x3.jpg" />
+								<div class="h">АРТ-ТУННЕЛЬ</div>
+								<div class="p">
+									Иммерсивный световой тоннель от художников новых медиа.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s4" style="--i: 3" data-index="3">
+					<div class="wrap lineup">
+						<div class="title">ПОЛНЫЙ СОСТАВ</div>
+						<div class="grid">
+							<div class="g"><img src="images/nw1.jpg" /></div>
+							<div class="g"><img src="images/nw2.jpg" /></div>
+							<div class="g"><img src="images/nw3.jpg" /></div>
+							<div class="g"><img src="images/nw4.jpg" /></div>
+							<div class="g"><img src="images/nw5.jpg" /></div>
+							<div class="g"><img src="images/nw6.jpg" /></div>
+							<div class="g"><img src="images/nw7.jpg" /></div>
+							<div class="g"><img src="images/nw8.jpg" /></div>
+							<div class="g"><img src="images/nw9.jpg" /></div>
+							<div class="g"><img src="images/nw10.jpg" /></div>
+							<div class="g"><img src="images/nw11.jpg" /></div>
+							<div class="g"><img src="images/nw12.jpg" /></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s5" style="--i: 4" data-index="4">
+					<div class="wrap tk">
+						<div class="title">БИЛЕТЫ</div>
+						<div class="cols">
+							<div class="col form">
+								<div class="field"><input placeholder="Полное имя*" /></div>
+								<div class="field"><input placeholder="Email*" /></div>
+								<div class="field select">
+									<div class="fake-select" data-open="0">
+										<span>Уровень — Общий</span><i></i>
+									</div>
+									<ul class="fake-dd">
+										<li>Уровень — Общий</li>
+										<li>Уровень — VIP</li>
+										<li>Уровень — Ultra</li>
+									</ul>
+								</div>
+								<div class="cta buy">Купить сейчас</div>
+								<div class="note blink">* обязательно, возможно</div>
+							</div>
+							<div class="col info">
+								<div class="poster"><img src="images/p1.jpg" /></div>
+								<div class="mini">Абонемент на 3 дня · от 199</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s6" style="--i: 5" data-index="5">
+					<div class="wrap">
+						<div class="title">НОВОСТИ</div>
+						<div class="news-row" id="newsrow">
+							<div class="n">
+								<img src="images/n1.jpg" />
+								<div class="cap">Афтепати переносится на Dock Stage</div>
+							</div>
+							<div class="n">
+								<img src="images/n2.jpg" />
+								<div class="cap">Открыт pop-up со светящимися напитками</div>
+							</div>
+							<div class="n">
+								<img src="images/n3.jpg" />
+								<div class="cap">Секретный гость в субботу, 23:45</div>
+							</div>
+							<div class="n">
+								<img src="images/n4.jpg" />
+								<div class="cap">VIP-терраса расширена</div>
+							</div>
+							<div class="n">
+								<img src="images/n5.jpg" />
+								<div class="cap">Обновлена карта шаттлов</div>
+							</div>
+							<div class="n">
+								<img src="images/n6.jpg" />
+								<div class="cap">Новый мерч: бирюзовые худи</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s8" style="--i: 6" data-index="6">
+					<div class="wrap mapwrap">
+						<div class="title">КАРТА И ПРОЕЗД</div>
+						<div class="mapbox">
+							<img src="images/map-large.jpg" />
+							<span class="pin p1" data-tip="Парковка"></span>
+							<span class="pin p2" data-tip="Паром"></span>
+							<span class="pin p3" data-tip="Шаттл"></span>
+							<div class="tip" id="maptip">Парковка</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section s9" style="--i: 7" data-index="7">
+					<div class="wrap sched">
+						<div class="title">РАСПИСАНИЕ</div>
+						<div class="stages">
+							<div class="stage">
+								<div class="sh">ГЛАВНАЯ СЦЕНА</div>
+								<div class="slot">18:00 — Violet Velocity</div>
+								<div class="slot">20:00 — Equinox</div>
+								<div class="slot">22:00 — Marina & the Lumens</div>
+							</div>
+							<div class="stage">
+								<div class="sh">ПРИЧАЛ</div>
+								<div class="slot">17:30 — Bluenoise</div>
+								<div class="slot">19:30 — Polar Shift</div>
+								<div class="slot">21:30 — Quasar</div>
+							</div>
+							<div class="stage">
+								<div class="sh">НОЧНОЙ ШАТЁР</div>
+								<div class="slot">00:00 — Aurora Drive</div>
+								<div class="slot">01:30 — NYX</div>
+								<div class="slot">03:00 — Secret Guest</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="marquee">
+			<div>NEONWAVE_NEONWAVE_NEONWAVE_NEONWAVE_NEONWAVE_NEONWAVE_</div>
+		</div>
+
+		<div class="shade" id="shade"></div>
+		<div class="modal" id="modal">
+			<div class="x tiny-click" id="closeModal" tabindex="-1"></div>
+			<div class="content">
+				<div class="md-title">Эксклюзивная предпродажа</div>
+				<div class="md-sub">Разблокируйте уровень Ultra до полуночи.</div>
+				<div class="field">
+					<input id="presaleEmail" placeholder="введите email" />
+				</div>
+			</div>
+			<div class="cta" id="goModal">продолжить</div>
+		</div>
+
+		<div class="cookie" id="cookie">
+			Мы используем cookie, чтобы не запоминать вас.
+			<div class="accept" id="cookieBtn">Ок</div>
+		</div>
+		<div class="toast" id="toast"></div>
+
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

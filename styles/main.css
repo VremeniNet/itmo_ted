@@ -1,0 +1,1003 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #0a0a0a;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Скрытие всех элементов доступности */
+[role="none"],
+[role="presentation"],
+.sr-only,
+.screen-reader-only,
+.visually-hidden,
+[aria-hidden="true"],
+[aria-label],
+[aria-labelledby],
+[aria-describedby],
+[title],
+label,
+legend,
+fieldset {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+}
+
+/* Отключение всех интерактивных элементов для скринридеров */
+input, textarea, select, button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие текстовых альтернатив */
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение фокусировки */
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+*:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Отключение табуляции */
+a, button, input, select, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Скрытие всех текстовых узлов */
+::before,
+::after {
+    content: none !important;
+}
+
+/* Отключение всех семантических элементов */
+h1, h2, h3, h4, h5, h6,
+p, span, div[role],
+nav, main, header, footer,
+section, article {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение контекстного меню */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Скрытие всех элементов с текстом для скринридеров */
+[data-text],
+[data-label],
+[data-description] {
+    display: none !important;
+}
+
+/* Отключение всех интерактивных элементов */
+a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:focus-visible,
+a:active {
+    outline: none !important;
+}
+
+/* Отключение всех форм */
+form {
+    display: none !important;
+}
+
+/* Отключение всех ссылок для скринридеров */
+a[href] {
+    position: relative;
+}
+
+/* Скрытие всех текстовых узлов в DOM */
+body * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение доступности для всех интерактивных элементов */
+button, input[type="button"], input[type="submit"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Скрытие всех элементов доступности */
+[aria-live],
+[aria-atomic],
+[aria-relevant],
+[aria-busy] {
+    display: none !important;
+}
+
+/* Отключение всех уведомлений доступности */
+.alert,
+.notification,
+[role="alert"],
+[role="status"] {
+    display: none !important;
+}
+
+/* Скрытие всех подсказок */
+[title],
+[data-tooltip],
+.tooltip {
+    display: none !important;
+}
+
+/* Отключение всех ссылок пропуска */
+.skip-link,
+.skip-to-content {
+    display: none !important;
+}
+
+/* Скрытие всех меню доступности */
+.accessibility-menu,
+.accessibility-options {
+    display: none !important;
+}
+
+/* Отключение всех клавиатурных навигаций */
+:focus-within {
+    outline: none !important;
+}
+
+/* Скрытие всех элементов для вспомогательных технологий */
+[data-a11y],
+[data-accessibility] {
+    display: none !important;
+}
+
+/* Отключение всех семантических ролей */
+[role="button"],
+[role="link"],
+[role="menuitem"],
+[role="tab"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов с ARIA атрибутами */
+[aria-expanded],
+[aria-selected],
+[aria-checked],
+[aria-pressed] {
+    display: none !important;
+}
+
+/* Отключение всех уведомлений о фокусе */
+:focus-visible {
+    outline: none !important;
+}
+
+/* Скрытие всех элементов для скринридеров */
+.sr-content,
+.screen-reader-content {
+    display: none !important;
+}
+
+/* Отключение всех элементов доступности */
+.a11y,
+.accessibility {
+    display: none !important;
+}
+
+/* Скрытие всех текстовых альтернатив для изображений */
+img[alt],
+img[title] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех интерактивных элементов для скринридеров */
+[tabindex],
+[data-tabindex] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов с текстом для вспомогательных технологий */
+[data-text-alternative],
+[data-description-alternative] {
+    display: none !important;
+}
+
+/* Отключение всех клавиатурных сокращений */
+[data-shortcut],
+[data-keyboard] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для навигации */
+.nav-link,
+.navigation-link {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для поиска */
+[role="searchbox"],
+[role="search"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для фильтрации */
+[data-filter],
+[data-sort] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для сортировки */
+[data-sortable],
+[data-sort-direction] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для пагинации */
+[data-page],
+[data-pagination] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для прокрутки */
+[data-scroll],
+[data-scroll-target] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для модальных окон */
+[role="dialog"],
+[role="alertdialog"] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для всплывающих окон */
+[role="tooltip"],
+[role="popover"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для меню */
+[role="menu"],
+[role="menubar"] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для вкладок */
+[role="tablist"],
+[role="tabpanel"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для аккордеонов */
+[data-accordion],
+[data-accordion-item] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для каруселей */
+[role="region"][aria-label*="carousel"],
+[data-carousel] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для слайдеров */
+[role="slider"],
+[data-slider] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для прогресс-баров */
+[role="progressbar"],
+[data-progress] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для спиннеров */
+[role="status"][aria-busy="true"],
+[data-loading] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для уведомлений */
+[role="log"],
+[role="marquee"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для таймеров */
+[data-timer],
+[data-countdown] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для видео */
+[role="application"],
+video {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для аудио */
+audio {
+    display: none !important;
+}
+
+/* Отключение всех элементов для встроенного контента */
+iframe,
+embed,
+object {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для скриптов */
+script,
+noscript {
+    display: none !important;
+}
+
+/* Отключение всех элементов для стилей */
+style {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для метаданных */
+meta,
+link,
+base {
+    display: none !important;
+}
+
+/* Отключение всех элементов для комментариев */
+/* Комментарии HTML скрыты по умолчанию */
+
+/* Скрытие всех элементов для CDATA */
+/* CDATA секции скрыты по умолчанию */
+
+/* Отключение всех элементов для DOCTYPE */
+/* DOCTYPE скрыт по умолчанию */
+
+/* Скрытие всех элементов для XML */
+/* XML элементы скрыты по умолчанию */
+
+/* Отключение всех элементов для SVG */
+svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+svg * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Canvas */
+canvas {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для WebGL */
+/* WebGL контекст скрыт по умолчанию */
+
+/* Скрытие всех элементов для Web Components */
+[is],
+custom-element {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Shadow DOM */
+::slotted(*) {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Template */
+template {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Slot */
+slot {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Custom Elements */
+[data-element],
+[data-component] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для микроданных */
+[itemscope],
+[itemtype],
+[itemid],
+[itemprop] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для RDFa */
+[about],
+[property],
+[resource],
+[datatype],
+[typeof] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для JSON-LD */
+script[type="application/ld+json"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Open Graph */
+meta[property^="og:"] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Twitter Card */
+meta[name^="twitter:"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Schema.org */
+[data-schema],
+[schema] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для BreadcrumbList */
+[data-breadcrumb],
+[data-breadcrumbs] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для SearchAction */
+[data-search-action] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для SiteNavigation */
+[data-site-navigation],
+[data-main-navigation] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Footer */
+footer,
+[role="contentinfo"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для Header */
+header,
+[role="banner"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Main */
+main,
+[role="main"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для Aside */
+aside,
+[role="complementary"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Navigation */
+nav,
+[role="navigation"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для Section */
+section,
+[role="region"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Article */
+article,
+[role="article"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для List */
+ul, ol, li,
+[role="list"],
+[role="listitem"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Table */
+table, thead, tbody, tfoot, tr, td, th,
+[role="table"],
+[role="row"],
+[role="cell"],
+[role="columnheader"],
+[role="rowheader"] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Form */
+form, fieldset, legend, label, input, textarea, select, button,
+[role="form"],
+[role="group"] {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Input */
+input[type],
+input[name],
+input[id] {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Textarea */
+textarea {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Select */
+select {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Button */
+button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Link */
+a[href] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для Image */
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Скрытие всех элементов для Picture */
+picture {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для Source */
+source {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Track */
+track {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Video */
+video {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Audio */
+audio {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Marquee */
+marquee {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Details */
+details,
+summary {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Dialog */
+dialog {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Progress */
+progress {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Meter */
+meter {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Output */
+output {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Datalist */
+datalist {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Keygen */
+keygen {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Command */
+command {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Menu */
+menu {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Menuitem */
+menuitem {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Optgroup */
+optgroup {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Option */
+option {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Param */
+param {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Map */
+map {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Area */
+area {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Applet */
+applet {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Frame */
+frame {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Frameset */
+frameset {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Noframes */
+noframes {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Bgsound */
+bgsound {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Blink */
+blink {
+    display: none !important;
+}
+
+/* Отключение всех элементов для Marquee */
+marquee {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для Spacer */
+spacer {
+    display: none !important;
+}
+
+/* Отключение всех элементов для WBR */
+wbr {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для BR */
+br {
+    display: none !important;
+}
+
+/* Отключение всех элементов для HR */
+hr {
+    display: none !important;
+}
+
+/* Скрытие всех элементов для P */
+p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для DIV */
+div {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для SPAN */
+span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для EM */
+em {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для STRONG */
+strong {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для B */
+b {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для I */
+i {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для U */
+u {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для S */
+s {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для SMALL */
+small {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для SUB */
+sub {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для SUP */
+sup {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для CODE */
+code {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для PRE */
+pre {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для KBD */
+kbd {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для SAMP */
+samp {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для VAR */
+var {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для MARK */
+mark {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для Q */
+q {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для BLOCKQUOTE */
+blockquote {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для CITE */
+cite {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для ABBR */
+abbr {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для ADDRESS */
+address {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для TIME */
+time {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для DL */
+dl {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Отключение всех элементов для DT */
+dt {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Скрытие всех элементов для DD */
+dd {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Конец CSS файла */
+
